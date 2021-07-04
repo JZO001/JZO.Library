@@ -1,0 +1,49 @@
+{
+  "name": "jzo-library",
+  "version": "1.0.0",
+  "description": "JZO's common JS library",
+  "author": "Zoltan Juhasz",
+  "license": "MIT",
+  "types": "./build/bundle.d.ts",
+  "main": "./build/bundle.js",
+  "keywords": [
+    "jzo",
+    "library",
+    "exception",
+    "argumentexception",
+    "argumentnullexception",
+    "argumentoutofrangeexception",
+    "browserscrollbars",
+    "dictionary",
+    "eventargs",
+    "event",
+    "guid",
+    "newtonsoftjsonparser",
+    "notimplementedexception",
+    "objectbase",
+    "random",
+    "stringbuilder",
+    "windowsevents"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JZO001/JZO.Library"
+  },
+  "scripts": {
+    "build": "rimraf ./build && webpack --config webpack.config.js",
+    "debug": "rimraf ./build && webpack --config webpack.dev-config.js",
+    "lint": "eslint ./src/"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-typescript": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^5.1.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
