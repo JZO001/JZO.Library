@@ -4,7 +4,7 @@ import { EventArgs } from "./EventArgs";
 export declare class GenericEvent<T extends EventArgs> extends ObjectBase implements IGenericEvent<T> {
     private mEventHandlers;
     static Cast<T extends EventArgs>(obj: any): GenericEvent<T>;
-    static CastArray<T extends EventArgs>(obj: any): GenericEvent<EventArgs>[];
+    static CastArray<T extends EventArgs>(obj: any): GenericEvent<T>[];
     addEventHandler: (eventHandler: IEventHandler<T>) => IGenericEvent<T>;
     removeEventHandler: (eventHandler: IEventHandler<T>) => IGenericEvent<T>;
     raiseEvent: (sender: any, eventArgs: T) => IGenericEvent<T>;
