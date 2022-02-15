@@ -3,6 +3,7 @@ export { ArgumentNullException } from "./ArgumentNullException";
 export { ArgumentOutOfRangeException } from "./ArgumentOutOfRangeException";
 export { BrowserScrollbars } from "./BrowserScrollbars";
 export { Dictionary } from "./Dictionary";
+export { DictionaryLegacy } from "./DictionaryLegacy";
 export { EventArgs } from "./EventArgs";
 export { Exception } from "./Exception";
 export { GenericEvent } from "./GenericEvent";
