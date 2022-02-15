@@ -1,0 +1,1 @@
+After build, copy d.ts folder from src into build, than publish
